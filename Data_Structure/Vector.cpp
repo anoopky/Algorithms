@@ -1,16 +1,13 @@
 #include <bits/stdc++.h>
-#define ll long long int
-#define pb push_back
-#define lb lower_bound
-#define ub upper_bound
+
 using namespace std;
 
 int main(){
 
-	vector<int> v;
+	vector<int> v; // inner implementation array
 
-	v.pb(5);
-	v.pb(3);
+	v.push_back(5);
+	v.push_back(3);
 
 	cout << v[0] << endl;
 
@@ -47,13 +44,13 @@ int main(){
 
 	vector<int> v2 = {2,3,3,5,7,8,8,8,9};
 
-	auto a = lb(v2.begin(), v2.end(), 2);
-	auto b = ub(v2.begin(), v2.end(), 3);
+	auto a = lower_bound(v2.begin(), v2.end(), 2);
+	auto b = upper_bound(v2.begin(), v2.end(), 3);
 
 	cout << *a << endl;
 	cout << a - v2.begin() << endl; // index
 	cout << *b << endl;
 
-	
+
     return 0;
 }
