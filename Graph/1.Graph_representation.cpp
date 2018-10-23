@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-	// adjancency Lists
+	// adjancency List
 
 	vector<int> adj[5];
 
@@ -48,7 +48,7 @@ int main(){
 	edges.push_back({3,4});
 	edges.push_back({4,1});
 
-	// weighted edges 
+	// weighted edges
 
 	vector<tuple<int, int, int>> wedges;
 
